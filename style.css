@@ -1,0 +1,322 @@
+*{
+    margin:0;
+}
+
+
+body{
+   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner{
+    color: white;
+   width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #e74694;
+    background-image: url(images/banner-background.png);
+    background-size: 300px;
+  
+}
+
+nav{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.header-left{
+    display: flex;
+    gap: 2px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;;
+}
+
+ul{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn{
+    font-weight: bold;
+    font-size: 1rem;
+    border:0;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+}
+
+.btn-white{
+    background-color: white;
+    border: 1px solid #80808054;
+}
+
+.btn-white:hover{
+    color:  #40a9fd;
+    border: 1px solid #40a9fd;
+}
+
+.btn-blue{
+    color: white;
+    background-color: #40a9fd;
+}
+
+.btn-blue:Hover{
+   
+    background-color: #397cb3;
+}
+
+
+.logo img{
+    width: 15rem;
+}
+
+.logo-tag{
+    background-image: url(images/become.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+.become-a-tester{
+    font-size: 10px;
+    padding: 10px 4px 4px 10px;
+  
+}
+
+
+@media (max-width:962px){
+    .header-right{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* TODO  Hero section*/
+
+main{
+    max-width: 1200px;
+    margin: auto;
+   
+}
+
+.hero-container{
+    padding: 1rem;
+  width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-right button{
+   white-space: nowrap;
+   width: 130px;
+  
+}
+
+.hero-right h1{
+    font-size: 3rem;
+    color: #183b56;;
+}
+
+.hero-right p{
+    color:#577592;
+    font-size: 1.2rem;
+    width: 70%;
+}
+
+.hero-left{
+    flex: 1;
+}
+
+.hero-left img{
+    max-width: 100%;
+}
+
+
+@media (max-width:760px) {
+    .hero-container{
+        flex-direction: column-reverse
+    }
+    
+.hero-left img{
+    max-width: 100%;
+}
+.hero-right h1{
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.hero-right p{
+    width: 80%;
+}
+.hero{
+    overflow: hidden;
+}
+
+}
+
+
+
+/* TODO company */
+
+.company{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.companies{
+    margin-top: 1rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.companies img{
+    max-width: 150px;
+    object-fit: contain;
+}
+
+
+
+/* Todo methods */
+
+.methods{
+    background-image: url(images/rock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.method-btn{
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(185, 181, 181);
+    padding: 0.5rem 1rem;
+}
+.method-btn:hover{
+   border: 1px solid #40a9fd;
+   color: #40a9fd;
+}
+
+.methods-cards{
+    overflow: hidden;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+ 
+}
+
+.method-btn span{
+   font-size: 1.3rem;
+   font-weight: bolder;
+   color:#40a9fd;
+   
+}
+.m-card{
+    min-width: 300px;
+}
+
+.m-card img{
+    width: 40px;
+}
+
+
+
+
+/* Todo summary */
+
+.summary{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.summary-left img{
+    width: 90%;
+  
+}
+
+
+.summary-right{
+    font-size: 1.1rem;
+    flex-basis: 70%;
+}
+
+.client{
+    background-image: url(images/quote.svg);
+    margin-top: 2rem;
+    background-repeat: no-repeat;
+    background-size: 64px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+
+.client-info img{
+    width: 50px;
+}
+
+
+@media (min-width:768px) {
+    .summary{
+        flex-direction: row;
+    }
+    
+.summary-left img{
+    width: 100%;
+  
+}
+}
+
+
+
+footer{
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color:#f5f9fd;
+    color: grey;
+    text-align: center;
+}
+
+.heart{
+    display: inline-block;
+    color: red;
+    animation: beat 0.5s infinite alternate;
+}
+
+@keyframes beat{
+    to{
+        transform: scale(1.2);
+    }
+}
